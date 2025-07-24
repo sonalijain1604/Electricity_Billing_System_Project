@@ -8,7 +8,7 @@ public class Conn {
     Statement s;
     Conn() {
         try {
-            c = DriverManager.getConnection("jdbc:mysql:///ebs", "root", "<password>");
+            c = DriverManager.getConnection("<path>", "root", "<password>");
             s = c.createStatement();
         } catch (Exception e) {
             e.printStackTrace();
